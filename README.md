@@ -65,15 +65,7 @@ Customer360/
    The API will start at `https://localhost:44398` 
    API Endpoint: `https://localhost:44398/api/UsageSummary`
 
-4. **Deploy to IIS (Production)**
-   ```bash
-   # Publish the application
-   dotnet publish -c Release -o ./publish
-   
-   # Copy published files to IIS wwwroot folder
-   # Configure IIS application pool to use .NET 8.0
-   # Set application pool identity and permissions
-   ```
+
 
 ### Frontend Setup
 1. **Navigate to the UI folder**
@@ -88,7 +80,7 @@ Customer360/
 
 3. **Start the development server**
    ```bash
-   npm start
+   ng serve
    ```
    
    The application will open at `http://localhost:4200`
