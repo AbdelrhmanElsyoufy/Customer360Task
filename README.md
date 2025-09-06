@@ -112,132 +112,11 @@ The application includes several test scenarios with predefined service numbers:
 | `SuspendedMobile123` | Any | Suspended | Shows suspension warning |
 | `InvalidService` | Any | Error | Returns error message |
 
-#### Testing Steps
-
-1. **Basic Functionality Test**
-   ```
-   1. Open the application
-   2. Enter "Mobile123" in the search box
-   3. Click search or press Enter
-   4. Verify usage data displays with progress circles
-   5. Click "Details" button to view detailed breakdown
-   ```
-
-2. **Service Type Cycling**
-   ```
-   1. Click the service type icon (phone/wifi/telephone)
-   2. Verify icon changes between Mobile/Broadband/Voice
-   3. Perform search with different service types
-   ```
-
-3. **Carousel Navigation**
-   ```
-   1. Search for "Mobile123" (has multiple usage items)
-   2. Use dots at bottom to navigate between cards
-   3. Verify smooth transitions
-   ```
-
-4. **Suspension Handling**
-   ```
-   1. Enter "Suspended123"
-   2. Verify suspension warning appears
-   3. Check that no usage data is shown
-   ```
-
-5. **Error Handling**
-   ```
-   1. Enter invalid service number
-   2. Verify appropriate error message
-   3. Test with empty input
-   ```
-
-### API Testing
-
-#### Using Swagger UI
-1. Navigate to `https://localhost:7000/swagger`
-2. Test the `/api/UsageSummary` endpoint with different parameters
-
-#### Using curl
-```bash
-# Test successful response
-curl "https://localhost:7000/api/UsageSummary?serviceType=Mobile&serviceNumber=Mobile123"
-
-# Test suspended service
-curl "https://localhost:7000/api/UsageSummary?serviceType=Mobile&serviceNumber=Suspended123"
-
-# Test error case
-curl "https://localhost:7000/api/UsageSummary?serviceType=Invalid&serviceNumber=Test123"
-```
-
-#### Expected API Responses
-
-**Successful Response:**
-```json
-{
-  "status": "Success",
-  "message": "Usage data retrieved successfully.",
-  "data": [
-    {
-      "freeUnitName": "Corporate Mobile Internet",
-      "unitsInitialNumber": 21800,
-      "unitsUnUsedAmount": 231,
-      "unitsUsedAmount": 21569,
-      "unit": "MB",
-      "percentage": 98.94,
-      "usageStartDate": "8-20-25",
-      "usageEndDate": "9-18-25",
-      "details": [...]
-    }
-  ],
-  "isSuspended": false
-}
-```
-
-**Suspended Response:**
-```json
-{
-  "status": "Suspended",
-  "message": "The Package has been suspended due to non-payment",
-  "data": [],
-  "isSuspended": true
-}
-```
-
-**Error Response:**
-```json
-{
-  "status": "Error",
-  "message": "Usage data is not available for Invalid service type.",
-  "data": [],
-  "isSuspended": false
-}
-```
-
-## 🔧 Configuration
-
-### CORS Configuration
-The API is configured to accept requests from `http://localhost:4200`. To modify this:
-
-```csharp
-// In Program.cs
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("Customer360.UI",
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:4200") // Change this URL
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        });
-});
-```
 
 ### API Base URL
-To change the API endpoint in the frontend:
 
-```typescript
 // In src/app/services/usage.service.ts
-private baseUrl = 'https://localhost:7000/api'; // Change this URL
+private baseUrl = 'https://localhost:44398/api/UsageSummary'; 
 ```
 
 ## 🎨 Features
@@ -252,4 +131,4 @@ private baseUrl = 'https://localhost:7000/api'; // Change this URL
 - **Carousel Navigation**: Smooth transitions between multiple usage items
 
 
-For support and questions, please create an issue in the GitHub repository.
+
