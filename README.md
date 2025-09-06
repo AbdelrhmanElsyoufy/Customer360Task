@@ -47,7 +47,7 @@ Customer360/
 ### Backend Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Customer360.git
+   git clone https://github.com/AbdelrhmanElsyoufy/Customer360Task.git
    cd Customer360
    ```
 
