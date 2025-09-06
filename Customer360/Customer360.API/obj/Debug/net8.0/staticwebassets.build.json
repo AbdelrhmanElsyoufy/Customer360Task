@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "O9vUhSSQv6/OTvxVW7iPYdTnYRv0+cLTzVBh1vhZ9oc=",
+  "Source": "Customer360.API",
+  "BasePath": "_content/Customer360.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

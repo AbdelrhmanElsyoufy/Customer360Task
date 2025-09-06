@@ -1,0 +1,15 @@
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\bin\Debug\net8.0\Customer360.Service.deps.json
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\bin\Debug\net8.0\Customer360.Service.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\bin\Debug\net8.0\Customer360.Service.pdb
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\bin\Debug\net8.0\Customer360.Data.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\bin\Debug\net8.0\Customer360.Data.pdb
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.csproj.AssemblyReference.cache
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.AssemblyInfoInputs.cache
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.AssemblyInfo.cs
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.csproj.CoreCompileInputs.cache
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer.A7984275.Up2Date
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\refint\Customer360.Service.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\Customer360.Service.pdb
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Service\obj\Debug\net8.0\ref\Customer360.Service.dll

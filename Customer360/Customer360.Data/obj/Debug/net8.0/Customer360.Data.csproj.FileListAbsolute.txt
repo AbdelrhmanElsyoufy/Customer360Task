@@ -1,0 +1,12 @@
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\bin\Debug\net8.0\Customer360.Data.deps.json
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\bin\Debug\net8.0\Customer360.Data.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\bin\Debug\net8.0\Customer360.Data.pdb
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.AssemblyInfoInputs.cache
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.AssemblyInfo.cs
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.csproj.CoreCompileInputs.cache
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\refint\Customer360.Data.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.pdb
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\ref\Customer360.Data.dll
+F:\Development\Abdelrhman Rady\frontend\Customer360\Customer360.Data\obj\Debug\net8.0\Customer360.Data.csproj.AssemblyReference.cache

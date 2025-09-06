@@ -1,0 +1,137 @@
+/* General */
+body { background-color: #160A26; }
+.header { background-color: #1c1033; border-bottom: 1px solid #2A1B40; }
+.input-group-custom { background-color: #2A1B40; border-radius: 8px; border: 1px solid #3a2c58; }
+.input-group-custom .form-control, .input-group-custom .input-group-text { background: transparent; color: white; border: none; box-shadow: none; }
+.input-group-custom .form-control::placeholder { color: #9794A6; }
+
+/* Card */
+.usage-card {
+  background: linear-gradient(145deg, #2A1B40, #1c1033);
+  color: white;
+  border: 1px solid #3a2c58;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.usage-card .card-header { background-color: rgba(255, 255, 255, 0.05); border-bottom: 1px solid #3a2c58; }
+.usage-card .card-title { font-weight: 600; }
+.usage-card i { font-size: 20px; }
+
+/* Progress Circle */
+.progress-circle { position: relative; width: 180px; height: 180px; }
+.progress-ring { transform: rotate(-90deg); }
+.progress-ring-bg { fill: none; stroke: #1c1033; stroke-width: 10; }
+.progress-ring-fill {
+  fill: none; stroke: #8b5cf6; stroke-width: 10; stroke-linecap: round;
+  stroke-dasharray: 502.65;
+  stroke-dashoffset: calc(502.65 - (502.65 * var(--progress)) / 100);
+  transition: stroke-dashoffset 1s ease-out;
+}
+.progress-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+
+/* Card Dates & Button */
+.bg-date-block { background-color: #2A1B40; border-radius: 8px; padding: 8px; }
+.bg-date-block small { color: #9794A6; font-size: 0.7rem; }
+.bg-date-block span { color: #E9EAF2; font-size: 0.85rem; font-weight: 500; }
+.usage-card button {
+  background-color: #8b5cf6; color: white; border: none; border-radius: 8px;
+  font-weight: 600; padding: 10px; transition: background-color 0.2s;
+}
+.usage-card button:hover { background-color: #7c3aed; }
+.usage-card button:disabled { background-color: #4a2c6b; cursor: not-allowed; opacity: 0.6; }
+
+/* Suspended State Styles */
+.card-suspended {
+  background: #2A1B40;
+  border-color: #5a2929;
+}
+.suspension-content { padding: 2rem 0; }
+.progress-circle.suspended .progress-ring-bg { stroke: #424242; }
+
+/* Manual Carousel */
+.manual-carousel .carousel-slide { display: none; animation: fadeIn 0.5s; }
+.manual-carousel .carousel-slide.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Carousel Dots */
+.carousel-indicators-custom { display: flex; justify-content: center; gap: 8px; padding: 0; }
+.carousel-indicators-custom span {
+  width: 8px; height: 8px; background-color: #3a2c58; border-radius: 50%;
+  cursor: pointer; transition: all 0.3s ease;
+}
+.carousel-indicators-custom span.active { background-color: #8b5cf6; transform: scale(1.3); }
+
+/* Enhanced Details Modal */
+.modal-content { background-color: #1c1033; color: white; border: 1px solid #3a2c58; border-radius: 12px; }
+.modal-header, .modal-footer { border-color: #3a2c58; }
+.modal-body { background-color: #160A26; }
+.detail-card {
+  background-color: #2A1B40; border-radius: 12px; border: 1px solid #3a2c58;
+  margin-bottom: 1rem;
+}
+.detail-card .progress-bar { background-color: #8b5cf6; }
+.extra-small { font-size: 0.8rem; color: #ecebf3; }
+
+
+/* Card */
+.usage-card {
+  background: linear-gradient(145deg, #2A1B40, #1c1033);
+  color: white;
+  border: 1px solid #3a2c58;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding-bottom: 30px; 
+}
+.usage-card .card-header { 
+  background-color: rgba(255, 255, 255, 0.05); 
+  border-bottom: 1px solid #3a2c58; 
+}
+.usage-card .card-title { font-weight: 600; }
+.usage-card i { font-size: 20px; }
+
+
+/* ... other styles ... */
+
+
+/* Carousel Dots */
+/* Updated for positioning inside the card */
+.carousel-indicators-custom { 
+  display: flex; 
+  justify-content: center; 
+  gap: 8px; 
+  padding: 0;
+  /* Start of Change: Positioning styles */
+  position: absolute;
+  bottom: 15px; /* Adjust vertical position from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ensure it spans the card width for centering */
+  /* End of Change */
+}
+.carousel-indicators-custom span {
+  width: 8px; 
+  height: 8px; 
+  background-color: #3a2c58; 
+  border-radius: 50%;
+  cursor: pointer; 
+  transition: all 0.3s ease;
+}
+.carousel-indicators-custom span.active { 
+  background-color: #8b5cf6; 
+  transform: scale(1.3); 
+}
+
+.progress-circle.position-relative {
+    position: relative; 
+}
+
+.suspension-warning-icon {
+    position: absolute; 
+    right: 20px; 
+    bottom: 20px; 
+    font-size: 2.5rem; 
+    transform: translate(0, 0); 
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "ContainingType": "Customer360.Api.Controllers.UsageSummaryController",
+    "Method": "GetUsageSummary",
+    "RelativePath": "api/UsageSummary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "serviceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

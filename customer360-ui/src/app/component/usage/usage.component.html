@@ -1,0 +1,198 @@
+<header class="header py-3 shadow-sm">
+  <div class="container d-flex align-items-center">
+    <div class="d-flex align-items-center flex-shrink-0">
+       <img src="assets/welogo.svg" alt="Company Logo" width="30" height="30" class="me-2">
+
+      <span class="fw-bold fs-5 text-white">Customer 360</span>
+    </div>
+
+    <div class="d-flex align-items-center flex-grow-1 justify-content-center mx-3">
+      <div class="input-group rounded input-group-custom w-100" style="max-width: 600px;">
+        
+        <button type="button" class="input-group-text" (click)="onSearch()">
+          <i class="bi bi-search"></i>
+        </button>
+
+        <input type="text" class="form-control" [(ngModel)]="searchQuery" (keyup.enter)="onSearch()" placeholder="Enter service number..." />
+        
+        <button type="button" class="input-group-text" (click)="cycleServiceType()">
+          <i [class]="selectedServiceType.iconClass" [ngStyle]="{ color: selectedServiceType.color }"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="container py-4">
+  <div  class="carousel-wrapper">
+    <div class="manual-carousel">
+       <div *ngIf="usageData?.isSuspended" class="carousel-slide active">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="card usage-card card-suspended">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-3">
+            <i [class]="selectedServiceType.iconClass"></i>
+            <h6 class="card-title mb-0">{{ selectedServiceType.name }}</h6>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <div class="progress-circle mx-auto position-relative" style="--progress: 0">
+            <svg class="progress-ring" viewBox="0 0 200 200">
+              <circle class="progress-ring-bg" cx="100" cy="100" r="80" />
+              <circle class="progress-ring-fill" cx="100" cy="100" r="80" />
+            </svg>
+            <div class="progress-content">
+              <div class="fs-3 fw-normal text-white">0 {{getUnitForServiceType(selectedServiceType.id)}}</div>
+              <div class="extra-small">Remaining of 0 {{getUnitForServiceType(selectedServiceType.id)}}</div>
+            </div>
+            <i class="bi bi-exclamation-triangle-fill text-danger suspension-warning-icon"></i>
+          </div>
+          <p class="text-danger mt-4 fw-bold">The Package has been suspended due to non-payment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div *ngIf="!usageData?.isSuspended">
+        <div *ngFor="let item of displayItems; let i = index" class="carousel-slide" [class.active]="i === mainCarouselIndex">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card usage-card" [class.card-suspended]="item.isSuspended">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                  <i [class]="getCardIconClass(item)"></i>
+                  <h6 class="card-title mb-0">{{ item.name }}</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                <div *ngIf="item.isSuspended" class="text-center suspension-content">
+                  <div class="progress-circle suspended mx-auto">
+                    <svg class="progress-ring" viewBox="0 0 200 200">
+                      <circle class="progress-ring-bg" cx="100" cy="100" r="80"/>
+                    </svg>
+                    <div class="progress-content">
+                      <i class="bi bi-exclamation-triangle-fill display-4 text-warning"></i>
+                    </div>
+                  </div>
+                  <h5 class="mt-3">Service Suspended</h5>
+                  <p class="text-muted mb-0">This package has been suspended due to non-payment.</p>
+                </div>
+                <div *ngIf="!item.isSuspended" class="row g-0 align-items-center">
+                  <div class="col-7">
+                    <div class="progress-circle mx-auto" [style.--progress]="100 - item.percentage">
+                      <svg class="progress-ring" viewBox="0 0 200 200">
+                        <circle class="progress-ring-bg" cx="100" cy="100" r="80"/>
+                        <circle class="progress-ring-fill" cx="100" cy="100" r="80"/>
+                      </svg>
+                      <div class="progress-content">
+                        <div class="fs-6 fw-bold  text-white">{{ formatNumber(item.remaining) }} {{ item.unit }}</div>
+                        <div class="fs-8"> Remaining of</div>
+                        <div class="fs-8 ">{{ formatNumber(item.total) }} {{ item.unit }}</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="text-center">
+                      <div class="bg-date-block mb-3">
+                        <small class="d-block">Effective</small>
+                        <span>{{ item.effectiveDate }}</span>
+                      </div>
+                      <div class="bg-date-block">
+                        <small class="d-block">Expires</small>
+                        <span>{{ item.expiryDate }}</span>
+                      </div>
+                      <button class="btn btn-primary mt-3 w-100" (click)="openDetails(item);" [disabled]="!item.details || item.details.length == 0">
+                        Details
+                      </button>
+                    </div>
+                  </div>
+
+                     <div *ngIf="displayItems.length > 1" class="carousel-indicators-custom">
+              <span *ngFor="let item of displayItems; let i = index" 
+                    [class.active]="i === mainCarouselIndex" 
+                    (click)="goToSlide(i)"></span>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  
+  </div>
+
+  <div *ngIf="isLoading" class="text-center"><div class="spinner-border text-primary" role="status"></div><p class="mt-2">Loading...</p></div>
+  <div *ngIf="!displayItems.length && !isLoading && !error" class="text-center text-muted"><p>Enter a service number to begin.</p></div>
+</main>
+
+
+
+<ng-template #detailsModal let-modal>
+  <div class="modal-header">
+    <div class="modal-title">
+      <h5 class="mb-0">{{ detailsData?.name }} Details</h5>
+    </div>
+    <button type="button" class="btn-close" (click)="modal.dismiss()" aria-label="Close"></button>
+  </div>
+
+  <div class="modal-body">
+    <div class="manual-carousel">
+      <div *ngFor="let detail of detailsData?.details; let i = index" class="carousel-slide" [class.active]="i === detailsCarouselIndex">
+        <div class="card detail-card">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-5 d-flex justify-content-center">
+                <div class="progress-circle progress-circle-sm" [style.--progress]=" (detail.currentAmount / detail.initialAmount) * 100">
+                  <svg class="progress-ring" viewBox="0 0 200 200">
+                    <circle class="progress-ring-bg" cx="100" cy="100" r="80" />
+                    <circle class="progress-ring-fill" cx="100" cy="100" r="80" />
+                  </svg>
+                  <div class="progress-content">
+                    <div class="fs-6 fw-bold text-white">{{ (detail.currentAmount / detail.initialAmount) * 100 | number:'1.0-0'}}%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-7 d-flex align-items-center">
+                <div class="w-100 ps-md-4 text-center text-md-start">
+                  <h6 class="mb-1 text-white">Data Bucket #{{ i + 1 }}</h6>
+                  <span class="badge" [ngClass]="{'bg-success': detail.currentAmount > 0, 'bg-secondary': detail.currentAmount === 0}">
+                    {{ detail.currentAmount > 0 ? 'Active' : 'Consumed' }}
+                  </span>
+                  <ul class="list-unstyled mt-3 text-white">
+                    <li><small class="text-white-50">Remaining:</small> {{ formatNumber(detail.currentAmount || 0) }} {{ detailsData?.unit }}</li>
+                    <li><small class="text-white-50">Consumed:</small> {{ formatNumber(detail.initialAmount - detail.currentAmount) || 0 }} {{ detailsData?.unit }}</li>
+                    <li><small class="text-white-50">Total:</small> {{ formatNumber(detail.initialAmount) || 0 }} {{ detailsData?.unit }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between extra-small mt-4">
+              <div class="d-flex flex-column text-center">
+                <small class="text-white-50">Effective Date</small>
+                <span class="text-white fw-bold">{{ detail.effectiveDate }}</span>
+              </div>
+              <div class="d-flex flex-column text-center">
+                <small class="text-white-50">Expiry Date</small>
+                <span class="text-white fw-bold">{{ detail.expiryDate }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="detailsData && detailsData.details.length > 1" class="carousel-indicators-custom mt-3">
+      <span *ngFor="let detail of detailsData.details; let i = index" [class.active]="i === detailsCarouselIndex" (click)="goToDetailSlide(i)"></span>
+    </div>
+  </div>
+</ng-template>
+
+
+
+
+
+

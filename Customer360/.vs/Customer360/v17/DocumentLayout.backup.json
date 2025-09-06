@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|solutionrelative:customer360.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|solutionrelative:customer360.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.data\\entity\\freeunitdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|solutionrelative:customer360.data\\entity\\freeunitdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7660F0-62AB-4773-8C71-0C2549DCD584}|Customer360.Service\\Customer360.Service.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.service\\usageserviceimp\\usagesummaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7660F0-62AB-4773-8C71-0C2549DCD584}|Customer360.Service\\Customer360.Service.csproj|solutionrelative:customer360.service\\usageserviceimp\\usagesummaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.api\\controllers\\usagesummarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|solutionrelative:customer360.api\\controllers\\usagesummarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.data\\customer360.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|solutionrelative:customer360.data\\customer360.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.data\\entity\\freeunitusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|solutionrelative:customer360.data\\entity\\freeunitusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.data\\response\\usageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|solutionrelative:customer360.data\\response\\usageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7660F0-62AB-4773-8C71-0C2549DCD584}|Customer360.Service\\Customer360.Service.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.service\\usageserviceinterface\\iusagesummaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7660F0-62AB-4773-8C71-0C2549DCD584}|Customer360.Service\\Customer360.Service.csproj|solutionrelative:customer360.service\\usageserviceinterface\\iusagesummaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.data\\dto\\usagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{572F5B1D-826D-44A9-907E-E1B5475DD2D3}|Customer360.Data\\Customer360.Data.csproj|solutionrelative:customer360.data\\dto\\usagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|f:\\development\\abdelrhman rady\\frontend\\customer360\\customer360.api\\customer360.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4C6AFC1E-E3AA-443A-9CC0-3E15DB477735}|Customer360.API\\Customer360.API.csproj|solutionrelative:customer360.api\\customer360.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Customer360.API\\appsettings.json",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\appsettings.json",
+              "RelativeToolTip": "Customer360.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-06T16:46:59.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsageSummaryService.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Service\\UsageServiceImp\\UsageSummaryService.cs",
+              "RelativeDocumentMoniker": "Customer360.Service\\UsageServiceImp\\UsageSummaryService.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Service\\UsageServiceImp\\UsageSummaryService.cs",
+              "RelativeToolTip": "Customer360.Service\\UsageServiceImp\\UsageSummaryService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAEwC8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T16:04:35.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\Program.cs",
+              "RelativeDocumentMoniker": "Customer360.API\\Program.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\Program.cs",
+              "RelativeToolTip": "Customer360.API\\Program.cs",
+              "ViewState": "AgIAABIAAADg/////38pwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T08:01:59.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FreeUnitDetail.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Entity\\FreeUnitDetail.cs",
+              "RelativeDocumentMoniker": "Customer360.Data\\Entity\\FreeUnitDetail.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Entity\\FreeUnitDetail.cs",
+              "RelativeToolTip": "Customer360.Data\\Entity\\FreeUnitDetail.cs",
+              "ViewState": "AgIAAAMAAAAAmpmZmRkqwAoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T08:25:19.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsageSummaryController.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\Controllers\\UsageSummaryController.cs",
+              "RelativeDocumentMoniker": "Customer360.API\\Controllers\\UsageSummaryController.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\Controllers\\UsageSummaryController.cs",
+              "RelativeToolTip": "Customer360.API\\Controllers\\UsageSummaryController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T08:12:15.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Customer360.Data.csproj",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Customer360.Data.csproj",
+              "RelativeDocumentMoniker": "Customer360.Data\\Customer360.Data.csproj",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Customer360.Data.csproj",
+              "RelativeToolTip": "Customer360.Data\\Customer360.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-04T07:55:37.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUsageSummaryService.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Service\\UsageServiceInterface\\IUsageSummaryService.cs",
+              "RelativeDocumentMoniker": "Customer360.Service\\UsageServiceInterface\\IUsageSummaryService.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Service\\UsageServiceInterface\\IUsageSummaryService.cs",
+              "RelativeToolTip": "Customer360.Service\\UsageServiceInterface\\IUsageSummaryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T12:25:54.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FreeUnitUsage.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Entity\\FreeUnitUsage.cs",
+              "RelativeDocumentMoniker": "Customer360.Data\\Entity\\FreeUnitUsage.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Entity\\FreeUnitUsage.cs",
+              "RelativeToolTip": "Customer360.Data\\Entity\\FreeUnitUsage.cs",
+              "ViewState": "AgIAAAAAAAAANDMzMzP7vwsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T09:01:28.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsageResponse.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Response\\UsageResponse.cs",
+              "RelativeDocumentMoniker": "Customer360.Data\\Response\\UsageResponse.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Response\\UsageResponse.cs",
+              "RelativeToolTip": "Customer360.Data\\Response\\UsageResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T15:32:50.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsageDto.cs",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Dto\\UsageDto.cs",
+              "RelativeDocumentMoniker": "Customer360.Data\\Dto\\UsageDto.cs",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.Data\\Dto\\UsageDto.cs",
+              "RelativeToolTip": "Customer360.Data\\Dto\\UsageDto.cs",
+              "ViewState": "AgIAAAMAAACAz8zMzMwJwAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T09:01:06.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Customer360.API.csproj",
+              "DocumentMoniker": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\Customer360.API.csproj",
+              "RelativeDocumentMoniker": "Customer360.API\\Customer360.API.csproj",
+              "ToolTip": "F:\\Development\\Abdelrhman Rady\\frontend\\Customer360\\Customer360.API\\Customer360.API.csproj",
+              "RelativeToolTip": "Customer360.API\\Customer360.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-04T07:58:42.668Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
